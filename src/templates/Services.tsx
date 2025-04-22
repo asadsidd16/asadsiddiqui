@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 import { Section } from '@/layout/Section';
 
-const Sponsors = () => (
+const Services = () => (
   <Section
-    title="Sponsors"
-    description="Our sponsors' exceptional support has made this project possible."
+    title="Services"
+    description="Our Services' exceptional support has made this project possible."
   >
     <table className="mx-auto border-collapse">
       <tbody>
@@ -87,4 +87,4 @@ const Sponsors = () => (
   </Section>
 );
 
-export { Sponsors };
+export { Services };
