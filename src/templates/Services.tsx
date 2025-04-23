@@ -2,8 +2,8 @@ import { Section } from '@/layout/Section';
 
 const Services = () => (
   <Section
-    title="Services"
-    description="Our Services' exceptional support has made this project possible."
+    title="HOW CAN I HELP YOU?"
+    description="Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experience that captivate and help you focus on growing your business."
   >
     <table className="mx-auto border-collapse">
       <tbody>

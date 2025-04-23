@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
+import CalButton from '@/button/CalButton';
+
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
@@ -32,11 +33,7 @@ const Hero = () => (
           </>
         }
         description="Bring Your Designs to Life with Expert Front-End Code"
-        button={
-          <Link href="/">
-            <Button xl>Get Started</Button>
-          </Link>
-        }
+        button={<CalButton />}
       />
     </Section>
   </Background>
