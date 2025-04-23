@@ -12,12 +12,13 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
+          <Link href="/">Services</Link>
         </li>
         <li>
-          <Link href="/">Sign in</Link>
+          <Link href="/">About</Link>
+        </li>
+        <li>
+          <Link href="/">Testimonial</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -27,7 +28,7 @@ const Hero = () => (
         title={
           <>
             {'Building Fast, Beautiful Interfaces for Modern Businesses\n'}
-            {/* <span className="text-primary-500">React developers</span> */}
+            <span className="text-primary-500">Website Development</span>
           </>
         }
         description="Bring Your Designs to Life with Expert Front-End Code"
