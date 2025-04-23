@@ -1,44 +1,50 @@
 import { Section } from '@/layout/Section';
 
+const services = [
+  {
+    title: 'Custom Frontend Development',
+    description: 'Build fast, responsive websites using React, Vue, Angular',
+  },
+  {
+    title: 'Landing Page Development',
+    description: 'High-converting, mobile-optimized landing pages',
+  },
+  {
+    title: 'UI Implementation from Designs',
+    description: 'Turn Figma, XD, or Sketch designs into pixel-perfect code',
+  },
+  {
+    title: 'Analytics Integration',
+    description: 'Google Analytics, event tracking on buttons, forms, pages',
+  },
+  {
+    title: 'Basic CMS Integrations',
+    description: 'Front-end hooks into WordPress headless, Contentful, etc.',
+  },
+  {
+    title: 'Site Optimization',
+    description: 'Speed improvements, SEO basics, accessibility best practices',
+  },
+];
+
 const Services = () => (
   <Section
     title="HOW CAN I HELP YOU?"
-    description="Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experience that captivate and help you focus on growing your business."
+    description="Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business."
   >
-    <table className="mx-auto border-collapse">
-      <tbody>
-        <tr className="h-56">
-          <td className="border-2 border-gray-300 p-3">
-            <h2 className="text-primary-500">
-              Service Details Custom Frontend Development
-            </h2>
-            <p>Build fast, responsive websites using React, Vue, Angular</p>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <h2 className="text-primary-500">Landing Page Development</h2>
-            <p>High-converting, mobile-optimized landing pages</p>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <h2 className="text-primary-500">UI Implementation from Designs</h2>
-            <p>Turn Figma, XD, or Sketch designs into pixel-perfect code</p>
-          </td>
-        </tr>
-        <tr className="h-56">
-          <td className="border-2 border-gray-300 p-3">
-            <h2 className="text-primary-500">Analytics Integration</h2>
-            <p>Google Analytics, event tracking on buttons, forms, pages</p>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <h2 className="text-primary-500">Basic CMS Integrations</h2>
-            <p> Front-end hooks into WordPress headless, Contentful, etc.</p>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <h2 className="text-primary-500">Site Optimization</h2>
-            <p>Speed improvements, SEO basics, accessibility best practices</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {services.map((service, idx) => (
+        <div
+          key={idx}
+          className="flex h-56 flex-col rounded-md border-2 border-gray-300 bg-white p-4"
+        >
+          <h2 className="text-lg font-semibold text-primary-500">
+            ({idx + 1}) {service.title}
+          </h2>
+          <p className="text-gray-700">{service.description}</p>
+        </div>
+      ))}
+    </div>
   </Section>
 );
 
