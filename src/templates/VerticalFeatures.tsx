@@ -1,31 +1,42 @@
+import { useRouter } from 'next/router';
+
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
-const VerticalFeatures = () => (
-  <Section
-    title="Hi, I'm Asad Siddiqui"
-    description="A Front-End Developer specializing in building high-performance websites and applications. I transform designs into seamless, beautiful, and responsive user experiences."
-  >
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
-      imageAlt="First feature alt text"
-    />
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature2.svg"
-      imageAlt="Second feature alt text"
-      reverse
-    />
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
-      imageAlt="Third feature alt text"
-    />
-  </Section>
-);
+const VerticalFeatures = () => {
+  const router = useRouter();
+
+  return (
+    <Section
+      title="Hey, I’m Asad 👋"
+      description="I’m a front-end engineer who enjoys building smooth, responsive web experiences. This site is a single-page app (SPA) built with React and Next.js—so everything loads fast and feels more like an app than a traditional website.
+    "
+      secondDescription="
+    I care a lot about clean UI, accessibility, and making things work well across devices. Lately, I’ve been playing around with design systems and AI-driven features."
+      thirdDescription="Thanks for checking out my work!"
+      image={`${router.basePath}/Asad.jpeg`}
+    >
+      <VerticalFeatureRow
+        title="Your title here"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+        image="/assets/images/feature.svg"
+        imageAlt="First feature alt text"
+      />
+      <VerticalFeatureRow
+        title="Your title here"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+        image="/assets/images/feature2.svg"
+        imageAlt="Second feature alt text"
+        reverse
+      />
+      <VerticalFeatureRow
+        title="Your title here"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+        image="/assets/images/feature3.svg"
+        imageAlt="Third feature alt text"
+      />
+    </Section>
+  );
+};
 
 export { VerticalFeatures };
