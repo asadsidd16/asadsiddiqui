@@ -40,7 +40,7 @@ const Section = (props: ISectionProps) => {
               </div>
             )}
             {props.image && (
-              <div className="mb-8 flex justify-center">
+              <div className="mb-8 mt-6 flex justify-center">
                 <div className="relative size-32 overflow-hidden rounded-full shadow-lg md:size-48">
                   {props.image}
                   <Image
