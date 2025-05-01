@@ -18,8 +18,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     </div>
 
     <div className="mb-9 mt-4 text-2xl">{props.description}</div>
-
-    {props.button}
+    <div className="flex justify-center">{props.button}</div>
   </header>
 );
 
