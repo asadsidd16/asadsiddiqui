@@ -20,27 +20,32 @@ const Section = (props: ISectionProps) => {
         }`}
       >
         {(props.title || props.description) && (
-          <div className="mb-12 text-center">
+          <div
+            className="mb-12 p-5 text-center"
+            style={{ background: '#6c63ff', borderRadius: 20 }}
+          >
             {props.title && (
-              <h2 className="text-4xl font-bold text-gray-900">
+              <h2 className="text-4xl font-bold text-gray-100">
                 {props.title}
               </h2>
             )}
             {props.description && (
-              <div className="mt-4 text-xl md:px-20">{props.description}</div>
+              <div className="mt-4 text-xl text-gray-100 md:px-20">
+                {props.description}
+              </div>
             )}
             {props.secondDescription && (
-              <div className="mt-4 text-xl md:px-20">
+              <div className="mt-4 text-xl text-gray-100 md:px-20">
                 {props.secondDescription}
               </div>
             )}
             {props.thirdDescription && (
-              <div className="mt-4 text-xl md:px-20">
+              <div className="mt-4 text-xl text-gray-100 md:px-20">
                 {props.thirdDescription}
               </div>
             )}
             {props.image && (
-              <div className="mb-8 mt-6 flex justify-center">
+              <div className="my-6 flex justify-center">
                 <div className="relative size-32 overflow-hidden rounded-full shadow-lg md:size-48">
                   {props.image}
                   <Image

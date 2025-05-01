@@ -7,7 +7,7 @@ const Banner = () => (
   <Section>
     <CTABanner
       title="Need a unfair advantage?"
-      subtitle="Let's make it happen"
+      subtitle="Interested in working together? We should queue up a time to chat. I’ll buy the coffee."
       button={<CalButton />}
     />
   </Section>
