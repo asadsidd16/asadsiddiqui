@@ -3,6 +3,7 @@ import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
+import { MyWork } from './MyWork';
 import { Services } from './Services';
 import { VerticalFeatures } from './VerticalFeatures';
 
@@ -12,6 +13,7 @@ const Base = () => (
     <Hero />
     <Services />
     <VerticalFeatures />
+    <MyWork />
     <Banner />
     <Footer />
   </div>

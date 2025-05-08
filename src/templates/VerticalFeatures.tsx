@@ -19,8 +19,8 @@ const VerticalFeatures = () => {
       <VerticalFeatureRow
         title="I'm proud to have collaborated with some awesome companies:"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-        image="/assets/images/feature.svg"
-        imageAlt="First feature alt text"
+        image="/assets/images/companiesGrouped.png"
+        imageAlt="grouped companies"
       />
     </Section>
   );
