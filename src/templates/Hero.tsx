@@ -22,7 +22,7 @@ const Hero = () => {
             <Link href="/">About</Link>
           </li>
           <li>
-            <Link href="/">Testimonial</Link>
+            <Link href="/">My Work</Link>
           </li>
         </NavbarTwoColumns>
       </Section>
