@@ -1,3 +1,5 @@
+import 'animate.css';
+
 import { Base } from '../templates/Base';
 
 const Index = () => <Base />;
