@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
+import { Link as LinkScroll } from 'react-scroll';
 
 import CalButton from '@/button/CalButton';
 
@@ -11,18 +12,36 @@ import { Logo } from './Logo';
 
 const Hero = () => {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const NavLink = ({ title }: any) => (
+    <LinkScroll
+      onClick={() => setIsOpen(false)}
+      to={title}
+      offset={0}
+      spy
+      smooth
+      activeClass="nav-active"
+      className="base-bold text-p4 hover:text-p1 max-lg:h5 cursor-pointer uppercase transition-colors duration-500 max-lg:my-4"
+    >
+      {title}
+    </LinkScroll>
+  );
+
   return (
     <Background color="#FFF">
       <Section yPadding="py-6">
+        {/* Remove */}
+        {isOpen ? '' : ''}
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
-            <Link href="/">Services</Link>
+            <NavLink title="services" />
           </li>
           <li>
-            <Link href="/">About</Link>
+            <NavLink title="about" />
           </li>
           <li>
-            <Link href="/">My Work</Link>
+            <NavLink title="mywork" />
           </li>
         </NavbarTwoColumns>
       </Section>

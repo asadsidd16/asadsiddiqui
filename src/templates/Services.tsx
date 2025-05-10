@@ -1,6 +1,5 @@
 import Image from 'next/image';
-
-import { Section } from '@/layout/Section';
+import { Element } from 'react-scroll';
 
 const services = [
   {
@@ -36,34 +35,33 @@ const services = [
 ];
 
 const Services = () => (
-  <Section
-    title="HOW CAN I HELP YOU?"
-    description="Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business."
-  >
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {services.map((service, idx) => (
-        <div
-          key={idx}
-          className="flex flex-col rounded-md border-2 border-gray-300 bg-white p-4"
-        >
-          <h2 className="mb-2 text-lg font-semibold text-primary-500">
-            {service.title}
-          </h2>
-          <p className="mb-4 text-gray-700">{service.description}</p>
-          <div className="flex justify-center">
-            <Image
-              src={service.image}
-              alt="service image"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="h-auto w-full"
-            />
+  <section>
+    <Element name="services">
+      <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((service, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col rounded-md border-2 border-gray-300 bg-white p-4"
+          >
+            <h2 className="mb-2 text-lg font-semibold text-primary-500">
+              {service.title}
+            </h2>
+            <p className="mb-4 text-gray-700">{service.description}</p>
+            <div className="flex justify-center">
+              <Image
+                src={service.image}
+                alt="service image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="h-auto w-full"
+              />
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </Section>
+        ))}
+      </div>
+    </Element>
+  </section>
 );
 
 export { Services };

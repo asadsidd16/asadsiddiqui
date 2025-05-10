@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-
-import { Background } from '../background/Background';
-import { Section } from '../layout/Section';
+import { Element } from 'react-scroll';
 
 const mywork = [
   {
@@ -49,8 +47,15 @@ const mywork = [
 
 const MyWork = () => {
   return (
-    <Background color="#FFF">
-      <Section yPadding="py-6">
+    <section>
+      <Element name="mywork">
+        <div className="flex flex-col items-center gap-2 py-10 text-center">
+          <h3 className="text-2xl font-bold text-gray-900">My Recent Work</h3>
+          <p className="max-w-xl text-gray-600">
+            A selection of projects I have contributed to.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-3">
           {mywork.map((work) => (
             <>
@@ -92,8 +97,8 @@ const MyWork = () => {
             </>
           ))}
         </div>
-      </Section>
-    </Background>
+      </Element>
+    </section>
   );
 };
 
