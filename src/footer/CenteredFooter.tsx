@@ -4,14 +4,16 @@ import { FooterCopyright } from './FooterCopyright';
 import { FooterIconList } from './FooterIconList';
 
 type ICenteredFooterProps = {
-  logo: ReactNode;
-  iconList: ReactNode;
-  children: ReactNode;
+  logo?: ReactNode;
+  iconList?: ReactNode;
+  children?: ReactNode;
 };
 
 const CenteredFooter = (props: ICenteredFooterProps) => (
   <div className="text-center">
-    {props.logo}
+    <div className="flex items-center justify-center">
+      <div className="h-auto w-24">{props.logo}</div>
+    </div>
 
     <nav>
       <ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-gray-800">
@@ -23,7 +25,7 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
       <FooterIconList>{props.iconList}</FooterIconList>
     </div>
 
-    <div className="mt-8 text-sm">
+    <div className="mt-3 text-sm">
       <FooterCopyright />
     </div>
 

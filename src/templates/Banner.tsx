@@ -6,7 +6,7 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Need a unfair advantage?"
+      title=""
       subtitle="Interested in working together? We should queue up a time to chat. I’ll buy the coffee."
       button={<CalButton />}
     />

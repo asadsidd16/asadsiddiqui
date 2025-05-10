@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Link as LinkScroll } from 'react-scroll';
@@ -8,7 +9,6 @@ import { Background } from '../background/Background';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
 
 const Hero = () => {
   const router = useRouter();
@@ -29,11 +29,22 @@ const Hero = () => {
   );
 
   return (
-    <Background color="#FFF">
+    <Background color="#F5F5F5">
       <Section yPadding="py-6">
         {/* Remove */}
         {isOpen ? '' : ''}
-        <NavbarTwoColumns logo={<Logo xl />}>
+        <NavbarTwoColumns
+          logo={
+            <Image
+              src={`${router.basePath}/lion.png`}
+              alt="service image"
+              width={100}
+              height={100}
+              sizes="5vw"
+              className="h-auto w-full"
+            />
+          }
+        >
           <li>
             <NavLink title="services" />
           </li>
@@ -54,8 +65,7 @@ const Hero = () => {
           image={`${router.basePath}/collab.png`}
           description="Bring Your Designs to Life with Expert Front-End Code"
           button={<CalButton />}
-        />{' '}
-        <div className="flex justify-center"></div>
+        />
       </Section>
     </Background>
   );

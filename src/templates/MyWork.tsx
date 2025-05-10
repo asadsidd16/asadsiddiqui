@@ -75,7 +75,7 @@ const MyWork = () => {
                 <h3 className="mb-2 text-sm font-semibold text-gray-900">
                   {work.company}
                 </h3>
-                <p className="mb-4 text-sm text-gray-700">{work.description}</p>
+                {/* <p className="mb-4 text-sm text-gray-700">{work.description}</p> */}
 
                 <div className="mb-4 flex flex-wrap gap-2">
                   {work.technologies.map((tech, index) => (
