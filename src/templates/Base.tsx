@@ -12,10 +12,11 @@ const Base = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
-    <Services />
     <About />
-    <MyWork />
+    <Services />
     <Collab />
+    <MyWork />
+
     <Banner />
     <Footer />
   </div>
