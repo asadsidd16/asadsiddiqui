@@ -6,7 +6,7 @@ const Collab = () => {
     <section>
       <div className="flex flex-col items-center gap-2 py-10 text-center">
         <h3 className="text-2xl font-bold text-gray-900">
-          I am proud to have collaborated with some great companies:
+          I’m proud to have worked with some incredible companies.
         </h3>
       </div>
 

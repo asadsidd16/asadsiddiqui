@@ -58,43 +58,46 @@ const MyWork = () => {
 
         <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-3">
           {mywork.map((work) => (
-            <>
-              <div
-                key={work.company}
-                className="rounded-2xl bg-white p-6 shadow-md transition duration-300 hover:shadow-xl"
-              >
-                <div className="relative mb-4 h-48 w-full">
-                  <Image
-                    src={work.image}
-                    alt="website image"
-                    fill
-                    className="rounded-lg object-cover"
-                  />
-                </div>
+            <div
+              key={work.company}
+              className="group relative rounded-2xl bg-white p-6 shadow-md transition duration-300 hover:shadow-xl"
+            >
+              <div className="relative mb-4 h-48 w-full overflow-hidden rounded-lg">
+                <Image
+                  src={work.image}
+                  alt="website image"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
 
-                <h3 className="mb-2 text-sm font-semibold text-gray-900">
-                  {work.company}
-                </h3>
-                {/* <p className="mb-4 text-sm text-gray-700">{work.description}</p> */}
-
-                <div className="mb-4 flex flex-wrap gap-2">
-                  {work.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800 shadow-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <a href={work.link} target="_blank" rel="noopener noreferrer">
-                  <button className="w-full rounded-lg bg-black px-6 py-3 text-sm uppercase text-white transition duration-300 hover:bg-gray-800">
-                    Visit
-                  </button>
+                {/* Hover Button Overlay */}
+                <a
+                  href={work.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <span className="rounded-md bg-white px-4 py-2 text-sm font-semibold text-black shadow-sm hover:bg-gray-100">
+                    Visit Site
+                  </span>
                 </a>
               </div>
-            </>
+
+              <h3 className="mb-2 text-sm font-semibold text-gray-900">
+                {work.company}
+              </h3>
+
+              <div className="mb-4 flex flex-wrap gap-2">
+                {work.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800 shadow-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </Element>
