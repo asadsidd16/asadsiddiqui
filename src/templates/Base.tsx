@@ -4,6 +4,7 @@ import { About } from './About';
 import { Banner } from './Banner';
 import { Collab } from './Collab';
 import { Footer } from './Footer';
+import { Header } from './Header';
 import { Hero } from './Hero';
 import { MyWork } from './MyWork';
 import { Services } from './Services';
@@ -11,12 +12,12 @@ import { Services } from './Services';
 const Base = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Header />
     <Hero />
     <About />
     <Services />
     <Collab />
     <MyWork />
-
     <Banner />
     <Footer />
   </div>

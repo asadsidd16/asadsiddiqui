@@ -78,7 +78,7 @@ const MyWork = () => {
                   className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 >
                   <span className="rounded-md bg-white px-4 py-2 text-sm font-semibold text-black shadow-sm hover:bg-gray-100">
-                    Visit Site
+                    Visit
                   </span>
                 </a>
               </div>
