@@ -16,7 +16,7 @@ const Hero = () => {
           title={
             <>{'Building Fast, Beautiful Interfaces for Modern Businesses'}</>
           }
-          image={`${router.basePath}/collab.png`}
+          image={`${router.basePath}/collab.webp`}
           description="Bring Your Designs to Life with Expert Front-End Code"
           button={<CalButton />}
         />

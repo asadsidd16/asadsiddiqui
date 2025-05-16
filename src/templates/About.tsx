@@ -46,10 +46,10 @@ const About = () => {
           >
             <div className="relative size-32 overflow-hidden rounded-full shadow-lg md:size-48">
               <Image
-                src={`${router.basePath}/Asad.jpeg`}
+                src={`${router.basePath}/Asad.webp`}
                 alt="Asad"
-                fill
-                className="object-cover"
+                width={1200}
+                height={600}
               />
             </div>
           </div>

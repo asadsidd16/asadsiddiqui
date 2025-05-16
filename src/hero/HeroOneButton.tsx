@@ -22,7 +22,13 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       data-aos="zoom-in"
       data-aos-delay="100"
     >
-      <Image src={props.image} alt="Asad" width={300} height={300} />
+      <Image
+        src={props.image}
+        alt="hero picture"
+        width={300}
+        height={300}
+        priority
+      />
     </div>
 
     <div

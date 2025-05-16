@@ -69,9 +69,9 @@ const Section = (props: ISectionProps) => {
               <div className="relative size-32 overflow-hidden rounded-full shadow-lg md:size-48">
                 <Image
                   src={props.image}
-                  alt="Asad"
-                  fill
-                  className="object-cover"
+                  alt="Asad image"
+                  width={1200}
+                  height={600}
                 />
               </div>
             </div>
