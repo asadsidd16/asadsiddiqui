@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <Background color="#F5F5F5">
-      <Section yPadding="pt-10 pb-12">
+      <Section yPadding="pt-20 pb-12">
         <HeroOneButton
           title={
             <>{'Building Fast, Beautiful Interfaces for Modern Businesses'}</>

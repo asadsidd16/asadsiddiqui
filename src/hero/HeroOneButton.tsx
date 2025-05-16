@@ -11,7 +11,7 @@ type IHeroOneButtonProps = {
 const HeroOneButton = (props: IHeroOneButtonProps) => (
   <header className="space-y-6 text-center">
     <h1
-      className="whitespace-pre-line text-5xl font-bold leading-hero text-gray-900"
+      className="whitespace-pre-line text-4xl font-bold leading-hero text-gray-900"
       data-aos="fade-down"
     >
       {props.title}
@@ -33,13 +33,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       {props.description}
     </div>
 
-    <div
-      className="flex justify-center"
-      data-aos="fade-up"
-      data-aos-delay="300"
-    >
-      {props.button}
-    </div>
+    <div className="flex justify-center">{props.button}</div>
   </header>
 );
 

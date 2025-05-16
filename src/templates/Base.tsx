@@ -16,8 +16,8 @@ const Base = () => (
     <Hero />
     <About />
     <Services />
-    <Collab />
     <MyWork />
+    <Collab />
     <Banner />
     <Footer />
   </div>
