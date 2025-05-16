@@ -48,7 +48,7 @@ const mywork = [
 const MyWork = () => {
   return (
     <section>
-      <Element name="mywork">
+      <Element name="works">
         <div className="flex flex-col items-center gap-2 py-10 text-center">
           <h3 className="text-2xl font-bold text-gray-900">My Recent Work</h3>
           <p className="max-w-xl text-gray-600">

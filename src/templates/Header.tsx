@@ -56,7 +56,7 @@ const Header = () => {
         <nav className="text-p4 hidden gap-8 font-semibold uppercase lg:flex">
           <NavLink title="services" />
           <NavLink title="about" />
-          <NavLink title="mywork" />
+          <NavLink title="works" />
         </nav>
 
         {/* Mobile menu toggle (on right) */}
@@ -93,7 +93,7 @@ const Header = () => {
                 <NavLink title="about" />
               </li>
               <li>
-                <NavLink title="mywork" />
+                <NavLink title="works" />
               </li>
             </ul>
           </nav>
