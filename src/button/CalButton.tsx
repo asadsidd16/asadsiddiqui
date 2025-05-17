@@ -16,8 +16,8 @@ export default function MyApp() {
       data-cal-namespace="30min"
       data-cal-link="asadsiddiqui/30min"
       data-cal-config='{"layout":"month_view"}'
-      className="animate__animated animate__fadeInUp flex items-center gap-2 rounded-lg bg-black px-4 py-2
-                 uppercase text-white transition duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-md"
+      className="animate__animated animate__fadeInUp hover:animate__heartBeat flex items-center gap-2 rounded-full bg-black px-4 py-2
+             uppercase text-white transition duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-md "
     >
       Book a call
       <svg

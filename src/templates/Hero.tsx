@@ -13,9 +13,7 @@ const Hero = () => {
     <Background color="#F5F5F5">
       <Section yPadding="pt-20 pb-12">
         <HeroOneButton
-          title={
-            <>{'Building Fast, Beautiful Interfaces for Modern Businesses'}</>
-          }
+          title={<>{'Clean, Fast Websites That Bring You More Customers'}</>}
           image={`${router.basePath}/collab.webp`}
           description="Bring Your Designs to Life with Expert Front-End Code"
           button={<CalButton />}
