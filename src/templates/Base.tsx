@@ -12,9 +12,8 @@ import { Services } from './Services';
 const Base = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
-    <Hero />
     <Header />
-
+    <Hero />
     <About />
     <Services />
     <MyWork />

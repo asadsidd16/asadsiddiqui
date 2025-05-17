@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Link as LinkScroll } from 'react-scroll';
@@ -45,13 +44,12 @@ const Header = () => {
       <div className="container flex h-14 items-center justify-between max-lg:px-5">
         {/* Logo always on the left */}
         <a className="z-20 cursor-pointer">
-          <Image
-            src={`${router.basePath}/lion.webp`}
-            alt="logo"
+          <img
+            src={`${router.basePath}/lion.png`}
             width={75}
-            height={75}
+            height={20}
+            alt="logo"
           />
-          {/* <a aria-label="Back to Home" className="text-base font-bold leading-snug tracking-heading text-secondary-400" href="/">Asad Siddiqui<sup>©</sup></a> */}
         </a>
 
         {/* Desktop Nav (right aligned) */}
@@ -72,7 +70,6 @@ const Header = () => {
             src={`/${isOpen ? 'close' : 'magic'}.svg`}
             alt="menu"
             className="size-1/2 object-contain"
-            loading="lazy"
           />
         </button>
       </div>
