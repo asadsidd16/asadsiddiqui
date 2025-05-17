@@ -2,6 +2,7 @@ import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { About } from './About';
 import { Banner } from './Banner';
+import { Collab } from './Collab';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Hero } from './Hero';
@@ -16,7 +17,7 @@ const Base = () => (
     <About />
     <Services />
     <MyWork />
-    {/* <Collab /> */}
+    <Collab />
     <Banner />
     <Footer />
   </div>
