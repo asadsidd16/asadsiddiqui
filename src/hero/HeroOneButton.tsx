@@ -17,16 +17,12 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       {props.title}
     </h1>
 
-    <div
-      className="flex justify-center"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-    >
+    <div className="flex justify-center">
       <Image
         src={props.image}
         alt="hero picture"
-        width={300}
-        height={300}
+        width={400}
+        height={400}
         priority
       />
     </div>

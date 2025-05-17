@@ -1,10 +1,7 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { Element } from 'react-scroll';
 
 const About = () => {
-  const router = useRouter();
-
   return (
     <section>
       <Element name="about">
@@ -46,10 +43,12 @@ const About = () => {
           >
             <div className="relative size-32 overflow-hidden rounded-full shadow-lg md:size-48">
               <Image
-                src={`${router.basePath}/Asad.webp`}
-                alt="Asad"
-                width={1200}
-                height={600}
+                src="/Asad.webp"
+                width={300}
+                height={300}
+                alt="A pitcure of asad"
+                // priority
+                sizes="(max-width: 768px) 100vw, 300px"
               />
             </div>
           </div>

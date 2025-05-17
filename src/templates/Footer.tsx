@@ -14,7 +14,7 @@ const Footer = () => {
         <CenteredFooter
           logo={
             <Image
-              src={`${router.basePath}/lion.png`}
+              src={`${router.basePath}/lion.webp`}
               alt="service image"
               width={10}
               height={10}

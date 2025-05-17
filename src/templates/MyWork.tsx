@@ -5,7 +5,7 @@ import { Element } from 'react-scroll';
 const mywork = [
   {
     company: 'neatMon',
-    image: '/neatMonHome.png',
+    image: '/neatMonHome.avif',
     description:
       'Built and maintained internal tools using Vue and TypeScript.',
     technologies: ['React', 'TypeScript'],
@@ -13,7 +13,7 @@ const mywork = [
   },
   {
     company: 'Rover ERP',
-    image: '/roverHome.png',
+    image: '/roverHome.avif',
     description:
       'Collaborated with design and product teams to revamp user flows.',
     technologies: ['TypeScript', 'Vue', 'Figma'],
@@ -21,7 +21,7 @@ const mywork = [
   },
   {
     company: 'OroCarrot',
-    image: '/orocarrotHome.png',
+    image: '/orocarrotHome.avif',
     description:
       'Collaborated with design and product teams to revamp user flows.',
     technologies: ['Shopify'],

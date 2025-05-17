@@ -1,10 +1,9 @@
 import clsx from 'clsx';
-import { useRouter } from 'next/router';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Link as LinkScroll } from 'react-scroll';
 
 const Header = () => {
-  const router = useRouter();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,14 +40,16 @@ const Header = () => {
         hasScrolled && 'bg-gray-200 py-2 backdrop-blur-[8px]',
       )}
     >
-      <div className="container flex h-14 items-center justify-between max-lg:px-5">
+      <div className="container flex h-12 items-center justify-between max-lg:px-5">
         {/* Logo always on the left */}
         <a className="z-20 cursor-pointer">
-          <img
-            src={`${router.basePath}/lion.png`}
-            width={75}
-            height={20}
+          <Image
+            src="/lion.webp"
             alt="logo"
+            width={75}
+            height={75}
+            sizes="75px"
+            // priority
           />
         </a>
 
