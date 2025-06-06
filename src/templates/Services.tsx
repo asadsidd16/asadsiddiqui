@@ -42,9 +42,10 @@ const Services = () => (
           How can I help you?
         </h3>
         <p className="max-w-xl text-gray-600">
-          Tired of websites that feel off-brand or don’t move the needle? I
-          design and build front-end experiences that look sharp, perform fast,
-          and support your business goals so you can focus on what matters most.
+          Your Website Should Work as Hard as You Do. If your site feels
+          outdated, off-brand, or just doesn’t convert—let’s fix that. I
+          specialize in front-end development that looks sharp, loads fast, and
+          delivers real business impact.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">

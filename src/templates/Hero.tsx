@@ -13,9 +13,9 @@ const Hero = () => {
     <Background color="#F5F5F5">
       <Section yPadding="pt-20 pb-12">
         <HeroOneButton
-          title={<>{'Clean, Fast Websites That Bring You More Customers'}</>}
+          title={<>{'Clean, Fast Websites That Get You More Customers'}</>}
           image={`${router.basePath}/collab.webp`}
-          description="Bring Your Designs to Life with Expert Front-End Code"
+          description="I design and build websites that turn visitors into paying customers."
           button={<CalButton />}
         />
       </Section>

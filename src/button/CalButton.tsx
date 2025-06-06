@@ -19,7 +19,7 @@ export default function MyApp() {
       className="animate__animated animate__fadeInUp hover:animate__heartBeat flex items-center gap-2 rounded-full bg-black px-4 py-2
              uppercase text-white transition duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-md "
     >
-      Book a call
+      Book a Free Strategy Call
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"

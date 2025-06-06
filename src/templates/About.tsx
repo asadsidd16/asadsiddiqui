@@ -23,7 +23,7 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            I design and build websites that solve real business problems.
+            I help businesses grow by building websites that convert.
           </div>
 
           <div
@@ -31,9 +31,9 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            From fast, responsive layouts to clear user flows, I focus on
-            performance, clarity, and creating a digital experience that drives
-            results.
+            Whether it is a high-converting landing page or a full website
+            overhaul, I focus on performance, clarity, and user experience to
+            help you win more customers and increase sales.
           </div>
 
           <div

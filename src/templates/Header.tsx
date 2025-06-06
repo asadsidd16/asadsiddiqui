@@ -40,7 +40,7 @@ const Header = () => {
         hasScrolled && 'bg-gray-200 py-2 backdrop-blur-[8px]',
       )}
     >
-      <div className="container flex h-12 items-center justify-between max-lg:px-5">
+      <div className="flex h-12 w-full items-center justify-between px-5">
         {/* Logo always on the left */}
         <a className="z-20 cursor-pointer">
           <Image
@@ -49,7 +49,6 @@ const Header = () => {
             width={75}
             height={75}
             sizes="75px"
-            // priority
           />
         </a>
 
