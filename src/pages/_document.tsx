@@ -8,7 +8,25 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          {/* Global Site Tag (gtag.js) */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-3RS4VVNRLE"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3RS4VVNRLE', {
+                page_path: window.location.pathname,
+              });
+            `,
+            }}
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
